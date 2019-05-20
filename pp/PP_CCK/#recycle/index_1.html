@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Contoso News</title>
+        <meta name="Author">Ching Cheng Kang  </meta>
+        <meta name="Description">Contoso News, the only source for news</meta>
+        <meta name="Keywords">News,Alert,Health,Business,Finance</meta>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <!-- Internal CSS is Used-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>   
+        
+        <style>
+        body {
+        color: #635959;    
+        }
+        header {
+            background-color: #242323;
+            color: #EFEFEF;
+        }
+        aside {
+            background-color: #EFEFEF;    
+        }
+        nav,footer {
+            background-color: #D1CDCD;
+            color: #242323;
+        }
+        h3, article h4 {
+            color: #8C1018;
+        }
+        article a {
+            color: #314052;
+        }
+        main figure > figcaption {
+            font-size: 0.75em;
+            font-style: italic;
+        }
+        main figure > figcaption::before {
+            content: 'Pictured above: ';
+            font-weight: bold;
+        }
+        article > time {
+            float: right;
+            font-size: 0.75em;
+            font-weight: lighter;
+        }
+        main > h3 {
+            font-size: 2em;
+        }
+        header {
+            padding: 20px 50px;
+        }
+        aside {
+            padding: 50px 20px;
+        }
+        main {
+            padding: 5px 10px;
+        }
+        /* FONT LOST */
+        body {
+        font-family: 'News Cycle' !important;    
+        }
+
+
+       
+        section#carousel {
+            flex: 1 100%;  
+            background-color: #D1CDCD;
+            color: #242323;   
+        }
+        
+        section#carousel > figure > img 
+        {
+            display: none;
+            margin: 0px auto;
+        }
+        section#carousel > figure.visible > img 
+        {
+            display: block;    
+            position: relative;
+            overflow: hidden;  
+            }
+        section#carousel > figure > figcaption 
+        {
+                display: none;
+        }
+        section#carousel > figure.visible > figcaption 
+        {
+            display: block;    
+            text-align: center;  
+            font-weight: bold;
+            font-size: 1.5em;
+            }
+        @media print {    
+            section#carousel {
+            display: none;   
+        }    
+        @media print {    
+        header {
+            padding: 0px;
+        }
+        article {
+            box-shadow: none;
+        }
+        nav, aside {
+            flex: none;
+            display: none;
+        }
+        header h1 {        
+            font-size: 4em;
+        }
+        header h2 {
+            display: none;
+        }
+        }
+        }
+        body {
+            display: flex;
+            flex-flow: row wrap;
+        }   
+        header, footer {
+            flex: 1 100%;
+        }
+        nav {
+            flex: 05;   
+        }
+        aside {
+            flex: 20;
+        }
+        main {
+            flex: 75;
+        }
+        @media print {
+            nav, aside {flex: none;}
+        }
+        @media all and (max-width: 1000px) {
+        nav, aside {
+            flex: 1 100%;
+        }
+        nav > h3, nav > ul, nav ul > li {
+            display: inline;
+        }
+        nav ol > li {
+            display: none;
+        }
+        header {
+            text-align: center;
+        }
+        nav > ul:first-of-type > li:last-of-type {
+            color: transparent;
+        }
+        }
+       
+
+
+
+        section#carousel > figure > img,figcaption {
+        display: block;        
+        }
+        section#carousel > figure > img {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        margin: 0px auto;
+        }
+        section#carousel > figure.visible > img {
+        position: relative;
+        overflow: hidden;  
+        opacity: 1;
+        height: auto;
+        }
+        section#carousel > figure.visible > figcaption {
+        text-align: center;  
+        font-weight: bold;
+        font-size: 1.5em;
+        opacity: 1;
+        height: auto;
+        }
+        section#carousel > figure.visible > img,figcaption {
+        transition-property: opacity;
+        transition-duration: 2s;
+        transition-timing-function: ease-out;
+        }
+        
+        </style>
+
+    </head>
+    <body class="container">
+        <header> 
+            <h1 style="font-size: 60px">
+                Costoso News
+            </h1>
+        </header>
+        <header>
+            <h2 style="font-size: 20px">
+                On Time, On Topic
+            </h2>
+        </header>
+        <section id="carousel" class="container">
+                <figure class="visible">
+                    <img src="C:\Users\TP051436\Desktop\A\Javascript\img\efficient_cars.jpg" alt="efficient Cars" />
+                    <figcaption>
+                    2017 Cars Promise to be More Fuel Efficient Than Ever:
+                    </figcaption>
+                </figure class="unvisible">
+                <figure>
+                    <img src="C:\Users\TP051436\Desktop\A\Javascript\img\natural_disaster.jpg" alt="natural disaster" />
+                    <figcaption>
+                    Hurricane Threatens to Touch Down on the East Coast This Weekend:
+                    </figcaption>
+                </figure>
+                <figure class="unvisible">
+                    <img src="C:\Users\TP051436\Desktop\A\Javascript\img\health_records.jpg"alt="Health Records" />
+                </figure>
+                <figcaption >
+                    Many Doctors are Moving to Digital Health Records This Year
+                </figcaption>
+    
+            </section>
+        <nav><!--nav Stand for Navigation-->
+            <h3>
+                Navigation
+            </h3>
+            <ul><!--ul stand for unordered list-->
+                <li><!--li stand for list-->
+                     <a href="#">Latest News</a>
+                </li>
+                <li>
+                    <a href="#">Local News</a>
+                </li>
+                <li>
+                    <a href="#">Regional News</a>
+                </li>
+                <li>
+                    <a href="#">National News</a>
+                </li>
+                <li>
+                    <strong>Trending Topics</strong>
+                     <ol><!--ol stand for ordered list-->
+                        <li>
+                            <a href="#">#Politics</a>
+                        </li>
+                        <li>
+                            <a href="#">#International</a>
+                        </li>
+                        <li>
+                            <a href="#">#Business</a>
+                        </li>
+                        <li>
+                            <a href="#">#Technology</a>
+                        </li>
+                        <li>
+                            <a href="#">#Entertainment</a>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        <h3>
+            Partner News:
+        </h3>
+        <ul>
+             <li>
+                <a href="http://news.microsoft.com/" target="_blank">Microsoft News</a>
+            </li>
+                    <li>
+                <a href="https://www.edx.org/news-announcements" target="_blank">edX News</a>
+            </li>
+            <li>
+                <a href="https://www.microsoft.com/en-us/learning/news.aspx" target="_blank">Microsoft Learning News</a>
+            </li>
+        </ul>
+                <summary class="panel panel-default">
+        <div class="panel-heading">Sign Up For Our Emails.</div>
+        <form class="form-horizontal panel-body">
+            <fieldset>  
+                <legend>Username</legend>
+                <label for="user-email">E-mail Address:</label>
+                <input id="user-email" type="text" required="required" />
+                <label for="Preference">Delivery Preference</label>
+            <select>
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+            </select><br>
+            <input type="submit" value="Sign-Up">
+
+            </fieldset>
+        </form></summary>
+        </nav>
+        <main class="row">
+            <h3>Latest Article</h3>
+            <article class="well">
+                <time datetime="16-01-2016"> Friday, Jan 16</time>
+                <h4>
+                International Story
+                </h4>
+                <p>
+                Curabitur pharetra luctus augue, non posuere orci tristique vel. Sed posuere nisi nec lacus ullamcorper, ac vulputate nisl consequat. Nullam sollicitudin nulla vel felis faucibus aliquam. Nunc sit amet velit orci. Proin sed orci fringilla, elementum felis condimentum, convallis augue. Aliquam erat volutpat. Mauris tempus nunc sit amet aliquet bibendum. Praesent vestibulum cursus ex, quis laoreet eros consectetur ac. Ut congue libero quis mauris egestas feugiat. Sed pharetra lorem et magna fringilla, a volutpat nibh sollicitudin. Nullam sagittis sollicitudin urna, sed sollicitudin mauris ornare id.
+                </p>
+                <a href="#" target="_blank">Read More...</a>
+            </article> 
+            <br />
+            <article class="well">
+                <time datetime="14-01-2016">Wednesday, Jan 14</time>
+                <h4>
+                 Finance Story
+                </h4>
+                <p>
+                Nullam tempor mi at libero elementum varius. Sed lobortis lacus feugiat est tristique, nec imperdiet turpis scelerisque. Ut sed urna malesuada, scelerisque dui sit amet, tempus mauris. Integer bibendum egestas urna, a bibendum sem gravida quis. Cras accumsan rhoncus vestibulum. Nam eu blandit leo. Integer at consectetur nunc, et tempus urna. Integer sit amet sollicitudin elit. Donec nec posuere erat. Sed vestibulum nisl neque, vitae tincidunt ex molestie quis. Nulla fringilla viverra turpis in volutpat. Cras vel orci quis velit efficitur ullamcorper sed eu ex.</p><br />
+                <figure ><figcaption>New Debit Cards with Chip-Based Security</figcaption><img src="img/download.jpg" alt="Debit Card with Chip" /></figure>
+                <p>Nullam vel ex nec lectus imperdiet luctus vitae vel nibh. Donec eleifend velit eros, eu efficitur justo molestie id. In egestas gravida lectus. Ut ipsum odio, suscipit sit amet molestie non, scelerisque sed mi. Aenean sed augue eu arcu faucibus molestie. Sed eget ante gravida, rhoncus velit eu, tempus quam. Sed fermentum at odio sed commodo. Fusce lobortis cursus purus, quis consequat est faucibus at. Etiam massa felis, sodales at sodales sed, iaculis quis arcu.
+                </p>
+                <a href="#" target="_blank">Read More...</a>
+            </article>      
+            <br />
+             <article class="well">
+                 <time datetime="14-01-2016">Wednesday Jan 14</time>
+                 <h4>
+                 Technology Story
+                 </h4>
+                <p>Morbi eget justo ut velit dapibus malesuada. Nunc elementum, neque quis convallis tempus, lacus ante tristique est, id porta tortor leo eget orci. Suspendisse hendrerit interdum lacus et condimentum. Mauris at ex dignissim, bibendum libero at, fermentum lectus. Maecenas porttitor purus quis augue interdum, eget malesuada neque placerat.</p>       
+                <p> Ut hendrerit risus in nibh elementum, quis vestibulum ipsum vulputate. Nulla facilisi. In consectetur et lacus vel tincidunt. Quisque feugiat ipsum et erat rhoncus efficitur. In in augue at enim tempor sollicitudin.     
+                </p>
+                <a href="#" target="_blank">Read More...</a>
+            
+             </article>
+        </main>
+        <aside>
+            <em>Advertisement</em>
+        </aside>
+        <footer>
+            <p>
+                <em>   
+                o Contoso News Conglomerate © 2016
+                </em>
+            </p>
+        </footer>
+        <script type="text/javascript" src="C:\Users\TP051436\Desktop\A\Javascript\Lab\Script.js">
+
+    </body>
+</html>
