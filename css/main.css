@@ -108,7 +108,7 @@ spin {
 
 .navbar a:hover,
 .subnav:hover .subnavbtn {
-    background-color: Blue;
+    background-color: rgba(170, 82, 57, 1);
 }
 
 .subnav-content {
@@ -116,7 +116,7 @@ spin {
     position: absolute;
     left: 5%;
     right: 5%;
-    background-color: rgba(37, 87, 226, 0.733);
+    background-color: rgba(212, 130, 106, 0.733);
     width: 90%;
     z-index: 1;
 }
@@ -142,6 +142,56 @@ spin {
 
 .valign_center {
     vertical-align: center;
+}
+
+
+/*Quick Link Boxex */
+
+.gaping {
+    width: 10px;
+    height: 80px;
+    border: 0px;
+    width: 10px;
+    height: 80px;
+}
+
+.no_margin {
+    margin: 0 0;
+}
+
+.nav_button {
+    text-align: center;
+    padding: 50px !important;
+    margin: 10px;
+    background: rgb(10, 39, 83) linear-gradient(-40deg, #AA5239, #551300);
+    font-size: 100%;
+    width: 100%;
+}
+
+.no_border {
+    border: 0;
+}
+
+
+/*Effect - Vision and Mision */
+
+.width_40 {
+    min-width: 40%;
+}
+
+.content {
+    margin-bottom: 0.5%;
+    border-style: dashed;
+    border-width: 3px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color: red;
+}
+
+.index_border {
+    border: #000 solid 1px;
+    margin-left: 10%;
+    margin-top: 2%;
 }
 
 
@@ -171,56 +221,6 @@ footer .copyright {
 
 .footer_title {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-
-/*Quick Link Boxex */
-
-.gaping {
-    width: 10px;
-    height: 80px;
-    border: 0px;
-    width: 10px;
-    height: 80px;
-}
-
-.no_margin {
-    margin: 0 0;
-}
-
-.nav_button {
-    text-align: center;
-    padding: 50px !important;
-    margin: 10px;
-    background: rgb(10, 39, 83) linear-gradient(-40deg, #0D47A1, #1976D2);
-    font-size: 100%;
-    width: 100%;
-}
-
-.no_border {
-    border: 0;
-}
-
-
-/*Effect - Vision and Mision */
-
-.width_40 {
-    min-width: 40%;
-}
-
-.content {
-    margin-bottom: 0.5%;
-    border-style: dashed;
-    border-width: 3px;
-    border-left-width: 10px;
-    border-right-width: 10px;
-    border-color: red;
-}
-
-.index_border {
-    border: #000 solid 1px;
-    margin-left: 10%;
-    margin-top: 2%;
 }
 
 
