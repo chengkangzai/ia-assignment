@@ -1,7 +1,8 @@
 /* Heading including logo */
 
 html {
-    width: 100%;
+    width: 82%;
+    margin:auto;
 }
 
 body {
@@ -117,7 +118,7 @@ spin {
     left: 5%;
     right: 5%;
     background-color: rgba(212, 130, 106, 0.733);
-    width: 90%;
+    width: 80%;
     z-index: 1;
 }
 
