@@ -2,7 +2,7 @@
 
 html {
     width: 82%;
-    margin:auto;
+    margin: auto;
 }
 
 body {
@@ -312,6 +312,10 @@ footer .copyright {
 }
 
 .font_120 {
+    font-size: 120%;
+}
+
+p {
     font-size: 120%;
 }
 
@@ -631,4 +635,30 @@ footer .copyright {
     border: 1px solid black;
     text-align: center;
     background: rgba(255, 255, 255, 0.9)
+}
+
+
+/* Contact Us */
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+
+/* Create two equal columns that floats next to each other */
+
+.contact_column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+
+/* Clear floats after the columns */
+
+.contact_row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
