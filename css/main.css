@@ -3,6 +3,7 @@
 html {
     width: 82%;
     margin: auto;
+    font-size: 22px;
 }
 
 body {
@@ -11,8 +12,9 @@ body {
     background-attachment: fixed;
     /*background: rgb(58, 45, 45) ; */
     background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
+    font-family: 'Sofia', sans-serif !important;
+    font-size: 150%;
 }
 
 

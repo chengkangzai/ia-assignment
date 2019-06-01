@@ -15,6 +15,40 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!--Icon for footer-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <style>
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical
+        }
+        
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        .s_container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -74,6 +108,39 @@
                 <a href="A_login.html">Privilege Mode</a>
             </div>
         </div>
+    </div>
+    <div class="glass">
+        <h1>
+            Submit Feedback
+        </h1>
+
+        <p>
+            We are happy to hear your voice !
+        </p>
+    </div>
+    <!--https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+    <div class="s_container">
+        <form method="POST">
+
+            <label for="fname">First Name</label>
+            <input type="text" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="lastname" placeholder="Your last name..">
+
+            <label for="category">Category</label>
+            <select name="category">
+            <option value="Website">Website</option>
+            <option value="Admin">Administrative </option>
+            <option value="Club">Club Activities</option>
+          </select>
+
+            <label for="subject">Subject</label>
+            <textarea name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
     </div>
 
     <footer>
