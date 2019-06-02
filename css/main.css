@@ -169,9 +169,13 @@ spin {
     display: block;
     padding: 50px !important;
     margin: 10px;
-    background: rgb(10, 39, 83) linear-gradient(-40deg, #AA5239, #551300);
+    background: linear-gradient(-40deg, #AA5239, #551300);
     font-size: 100%;
     width: 100%;
+}
+
+.nav_button:hover {
+    background: linear-gradient(-100deg, #AA5239, #551300)
 }
 
 .no_border {
@@ -759,11 +763,11 @@ p {
 }
 
 
-/*Survery and Feedback */
+/* Feedback */
 
-input[type=text],
-select,
-textarea {
+.text-input,
+.F_select,
+.F_textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -774,7 +778,7 @@ textarea {
     resize: vertical
 }
 
-input[type=submit] {
+.submit-input {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -783,7 +787,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+.submit-input:hover {
     background-color: #45a049;
 }
 
