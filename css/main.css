@@ -1,7 +1,7 @@
 /* Heading including logo */
 
 html {
-    width: 82%;
+    width: 95%;
     margin: auto;
     font-size: 22px;
 }
@@ -13,7 +13,7 @@ body {
     /*background: rgb(58, 45, 45) ; */
     background-size: cover;
     width: 100%;
-    font-family: 'Sofia', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 a {
@@ -278,7 +278,7 @@ h4,
 h5,
 h6,
 th {
-    font-family: 'Sofia'!important;
+    font-family: 'Montserrat'!important;
 }
 
 .h4 {
