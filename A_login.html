@@ -92,21 +92,16 @@
                 <input class="login_input font_120" type="text" id="username" placeholder="Type your username here" name="userid" onchange="showpassword"> </p>
             <p class="font_120"> Password:
                 <input class="login_input font_120" type="password" name="password" id="password" placeholder="Type your password here"> </p>
+            <p>
+                <input type="checkbox" onclick="showpassword()">Show Password
+            </p>
 
             <input class="login_input font_120" type="button" value=" Login " onclick="check(this.form)">
         </form>
     </div>
-
-    <script>
-        function check(form) {
-            if (form.userid.value == "admin" && form.password.value == "admin") {
-                window.open("TBC.html")
-            } else {
-                alert("Username or Password entered are wrong.\nTry login with \" username:admin, password:admin \"")
-            }
-
-
-        }
+    <script src="js/showpassword.js">
+    </script>
+    <script src="js/login.js">
     </script>
     <footer>
         <p class="footer_title ">STAY IN TOUCH </p>
