@@ -16,6 +16,10 @@ body {
     font-family: 'Sofia', sans-serif !important;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /*Pre-load */
 
