@@ -17,16 +17,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <style>
-        .mySlides {
+        .Gallery_Slides {
             display: none;
-        }
-        
-        img {
-            vertical-align: middle;
         }
         /* Slideshow container */
         
-        .slideshow-container {
+        .Gallery_slideshow_container {
             width: 100%;
             position: relative;
             margin: auto;
@@ -180,40 +176,40 @@
         </div>
     </div>
     <div class="glass center1">
-        <h2>Gallary </h2>
-        <p>2nd APU Junior & Senior Taekwondo Poomsae Invitational </p>
+        <h2 class="underline">Gallary </h2>
+        <p>2<sup>nd</sup> APU Junior & Senior Taekwondo Poomsae Invitational </p>
         <p>Credit to : <b>Beyond Media !</b></p>
     </div>
 
     <div class="row">
         <div class="column">
-            <div class="slideshow-container">
+            <div class="Gallery_slideshow_container">
 
-                <div class="mySlides fade">
+                <div class="Gallery_Slides fade">
                     <img src="Multimedia/img/slideshow/Gallery/img1.jpg" style="width:100%">
                     <div class="text">Caption Text</div>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="Gallery_Slides fade">
                     <img src="Multimedia/img/slideshow/Gallery/img2.jpg" style="width:100%">
                     <div class="text">Caption Two</div>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="Gallery_Slides fade">
                     <img src="Multimedia/img/slideshow/Gallery/img3.jpg" style="width:100%">
                     <div class="text">Caption Three</div>
                 </div>
-                <div class="mySlides fade">
+                <div class="Gallery_Slides fade">
                     <img src="Multimedia/img/slideshow/Gallery/img4.jpg" style="width:100%">
                     <div class="text">Caption Text</div>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="Gallery_Slides fade">
                     <img src="Multimedia/img/slideshow/Gallery/img5.jpg" style="width:100%">
                     <div class="text">Caption Two</div>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="Gallery_Slides fade">
                     <img src="Multimedia/img/slideshow/Gallery/img6.jpg" style="width:100%">
                     <div class="text">Caption Three</div>
                 </div>
@@ -229,37 +225,16 @@
                 <span class="dot"></span>
             </div>
         </div>
-        <div class="column">
-            <h2>Column 2</h2>
-            <p>Some text..</p>
+        <div class="column glass center1 ">
+            <h2>2<sup>nd</sup> APU Junior & Senior Taekwondo Poomsae Invitational </h2>
+            <p>Every Participant are having fun in this event and learned many infomation.</p>
         </div>
     </div>
 
 
 
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
+    <script src="js/slideshow.js">
     </script>
     <footer>
         <p class="footer_title">STAY IN TOUCH </p>
