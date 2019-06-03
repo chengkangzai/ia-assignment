@@ -42,7 +42,8 @@ function ready() {
 }
 
 function purchaseClicked() {
-    var modal = document.getElementById('id01');
+    var modal = document.getElementById('id01')
+
     modal.style.display = "block"
 
     updateCartTotal()
