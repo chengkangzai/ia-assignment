@@ -14,6 +14,7 @@ body {
     background-size: cover;
     width: 100%;
     font-family: 'Montserrat', sans-serif !important;
+    cursor: url(../Multimedia/cursor.png);
 }
 
 a {
@@ -779,7 +780,7 @@ p {
 }
 
 .submit-input {
-    background-color: #4CAF50;
+    background-color: #531402a8;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -788,7 +789,7 @@ p {
 }
 
 .submit-input:hover {
-    background-color: #45a049;
+    background-color: #551300;
 }
 
 .s_container {
