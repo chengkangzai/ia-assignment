@@ -2,7 +2,7 @@
  
  input[type=text],
  input[type=password] {
-     width: 100%;
+     width: 80%;
      padding: 15px;
      margin: 5px 0 22px 0;
      display: inline-block;
@@ -45,7 +45,6 @@
      height: 100%;
      overflow: hidden;
      background-color: #474e5d;
-     padding-top: 50px;
  }
  /* Style the horizontal ruler */
  
@@ -94,8 +93,8 @@
      background-color: #f2f2f2;
      padding: 5px 20px 15px 20px;
      border: 1px solid lightgrey;
-     border-radius: 3px;
-     margin: 100px;
+     border-radius: 0.25%;
+     margin: 2%;
  }
  
  .container2 {
@@ -328,4 +327,3 @@
      margin: 40px auto 80px auto;
      font-size: 1.75em;
  }
- /* Shit happenning*/

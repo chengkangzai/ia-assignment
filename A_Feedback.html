@@ -16,9 +16,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style>
-
-    </style>
 </head>
 
 <body>
@@ -81,6 +78,7 @@
                 <a href="A_PP.html">Who are we? </a>
                 <a href="A_Contact.html">Contact Us </a>
                 <a href="A_Feedback.html">Feedback</a>
+                <a href="A_Enquiry.html">Enquiry</a>
                 <a href="A_login.html">Privilege Mode</a>
             </div>
         </div>
@@ -96,28 +94,34 @@
     </div>
     <!--https://www.w3schools.com/howto/howto_css_contact_form.asp -->
     <div class="s_container">
-        <form method="POST">
+        <form method="POST" name="Feedback">
 
             <label for="fname">First Name</label>
-            <input class="text-input" type="text" name="firstname" placeholder="Your name..">
+            <input id="fname" class="text-input" type="text" name="firstname" placeholder="Your name.." required>
 
             <label for="lname">Last Name</label>
-            <input class="text-input" type="text" name="lastname" placeholder="Your last name..">
+            <input id="lname" class="text-input" type="text" name="lastname" placeholder="Your last name.." required>
 
             <label for="category">Category</label>
             <select class="F_select" name="category">
-            <option value="Website">Website</option>
-            <option value="Admin">Administrative </option>
-            <option value="Club">Club Activities</option>
-          </select>
+                    <option value="Website">Website</option>
+                    <option value="Admin">Administrative </option>
+                    <option value="Club">Club Activities</option>
+                </select>
 
             <label for="subject">Subject</label>
-            <textarea class="F_textarea" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea class="F_textarea" name="subject" placeholder="Write something.." style="height:200px"></textarea required>
 
             <input class="submit-input" type="submit" value="Submit">
 
+
         </form>
     </div>
+    <script>
+        function feedback() {
+            alert("Your Feedback have been submitted.")
+        }
+    </script>
 
     <footer>
         <p class="footer_title">STAY IN TOUCH </p>

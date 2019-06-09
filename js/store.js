@@ -41,12 +41,21 @@ function ready() {
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
+
+
 function purchaseClicked() {
     var modal = document.getElementById('id01')
 
     modal.style.display = "block"
 
-    updateCartTotal()
+    document.getElementsByClassName('close')[0].addEventListener('click', close)
+
+}
+
+function close() {
+    var modal = document.getElementById('id01')
+
+    modal.style.display = "none"
 }
 
 function removeCartItem(event) {
@@ -115,3 +124,4 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
+s

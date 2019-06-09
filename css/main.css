@@ -483,6 +483,8 @@ p {
 .login_input {
     margin: 0.25%;
     padding: 0.25%;
+    display: inline;
+    width: 50%;
 }
 
 
