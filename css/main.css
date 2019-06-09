@@ -609,6 +609,7 @@ p {
 @media screen and (max-width: 600px) {
     .H_column {
         width: 100%;
+        display: block;
     }
 }
 
