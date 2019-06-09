@@ -315,6 +315,14 @@ th {
     text-align: center;
 }
 
+.indent {
+    text-indent: 10%;
+}
+
+.no-indent {
+    text-indent: 0px;
+}
+
 
 /*Font size */
 
@@ -609,7 +617,6 @@ p {
 @media screen and (max-width: 600px) {
     .H_column {
         width: 100%;
-        display: block;
     }
 }
 
