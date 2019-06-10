@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
+body{
+    margin:0;
+    padding:0;
+    font-family: "Source Sans Pro', sans-serif";
+}
+.card{
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:400px;
+    height:500px;
+    transform-style: preserve-3d;
+    perspective:600px;
+    transition:0.6s;
+}
+.card .front
+{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:#000;
+    backface-visibility:hidden;
+    transform: rotateX(0deg);
+    transition:0.6s;
+}
+
+.card:hover .front
+{
+    transform: rotateX(-180deg);
+}
+
+.card .back
+{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:grey;
+    backface-visibility:hidden;
+    transform: rotateX(180deg);
+    transition:0.6s;
+}
+
+.card:hover .back
+{
+    transform: rotateX(0deg);
+}
+
+.card .back .details
+{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:0;
+    width:100%;
+    text-align: center;
+    padding:20px;
+    box-sizing:border-box;
+}
+.card .back .details h1
+{
+    margin:0;
+    padding:0;
+    font-size:24px;
+    color:#fff;
+}
+.card .back .details h2 span
+{
+    color: darkblue;
+    font-size:25px;
+}
+
+.card .back .details p
+{
+    color: whitesmoke;
+    font-size:16px;
+}
+
+.social-icons{
+    padding:10px 0;
+}
+.social-icons a{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    text-align:center;
+    background: #262626;
+    color:whitesmoke;
+    text-decoration: none;
+    border-radius: 50%;
+    transition:0.6s;
+}
+.social-icons a .fa{
+    line-height:36px;
+}
+.social-icons a:hover .fa{
+    background: #e91863
+}
+
+.bg {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+      
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+  }
