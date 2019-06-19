@@ -1,18 +1,24 @@
  /* Full-width input fields */
  
  input[type=text],
- input[type=password] {
+ input[type=password],
+ input[type=email],
+ input[type=number],
+ input[type=month] {
      width: 80%;
      padding: 15px;
      margin: 5px 0 22px 0;
      display: inline-block;
-     border: none;
+     border: solid black 2px;
      background: #f1f1f1;
  }
  /* Add a background color when the inputs get focus */
  
  input[type=text]:focus,
- input[type=password]:focus {
+ input[type=password]:focus,
+ input[type=email]:focus,
+ input[type=number]:focus,
+ input[type=month]:focus {
      background-color: #ddd;
      outline: none;
  }
@@ -104,7 +110,10 @@
      border-radius: 3px;
  }
  
- input[type=text] {
+ input[type=text],
+ input[type=number],
+ input[type=month],
+ input[type=email] {
      width: 100%;
      margin-bottom: 20px;
      padding: 12px;
