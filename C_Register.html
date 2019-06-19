@@ -91,10 +91,10 @@
             <form method="POST">
 
                 <label>First Name :</label>
-                <input class="text-input" type="text" name="firstname" placeholder="Your name..">
+                <input class="text-input" type="text" name="firstname" placeholder="Your name.." required>
 
                 <label>Last Name</label>
-                <input class="text-input" type="text" name="lastname" placeholder="Your last name..">
+                <input class="text-input" type="text" name="lastname" placeholder="Your last name.." required>
                 <span>
                 <label>Phone Number</label>
                 <!--https://gist.github.com/andyj/7108917-->
@@ -324,15 +324,15 @@
                         </optgroup>
                     </select>
 
-                <input class="text-input" type="number" name="Phone_Number" placeholder="Your Phone number w/o region"> </span>
+                <input class="text-input" type="number" name="Phone_Number" placeholder="Your Phone number w/o region" required> </span>
 
                 <label>Email</label>
-                <input class="text-input" type="email" name="Email" placeholder="Your Email..">
+                <input class="text-input" type="email" name="Email" placeholder="Your Email.." required>
                 <label>Password:</label>
-                <input type="password" name="pass" class="text-input" placeholder="Enter your Password">
+                <input type="password" name="pass" class="text-input" placeholder="Enter your Password" required>
 
                 <label>Re-Enter Your Password:</label>
-                <input type="password" name="pass" class="text-input" placeholder="Comfirm your Password">
+                <input type="password" name="pass" class="text-input" placeholder="Comfirm your Password" required>
                 <label>Your Gender  :</label>
                 <input type="radio" name="male" class="male">
                 <span id="male"> Male</span>
@@ -340,12 +340,13 @@
                 <span id="female"> Female</span>
                 <br>
 
-                <input class="submit-input" type="submit" value="Submit">
+                <input class="submit-input" type="submit" value="Submit" onsubmit="sucess()">
 
 
             </form>
         </div>
-
+        <script src="js/sucess.js">
+        </script>
     </div>
     <footer>
         <p class="footer_title">STAY IN TOUCH </p>
