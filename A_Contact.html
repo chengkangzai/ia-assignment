@@ -6,21 +6,27 @@
     <title>Contact us @ Asia Pacific University</title>
     <!--Webpage icon -->
     <link rel="icon" href="Multimedia/img/logo.png" type="image/png" sizes="16x16">
-    <link rel="stylesheet" href="css/main.css">
     <!-- Connect to CSS-->
+    <link rel="stylesheet" href="css/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type="text/javascript" src="js/script.js"></script>
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!--Icon for footer-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
 
 
 </head>
 
 <body>
+    <button onclick="topFunction()" id="rocket" title="Go to top">
+        <img src="Multimedia/img/rockets.png" style="width:20px" />          
+    </button>
+    <script src="js/rocket.js">
+    </script>
     <!-- Preloader -->
     <div id="overlay">
         <div class="spinner"></div>
@@ -48,6 +54,7 @@
                 <a href="T_history.html">History </a>
                 <a href="T_Rank_and_belt.html">Rank and belt </a>
                 <a href="T_Rule_and_regulation.html">Rule and regulation </a>
+                <a href="T_Attire.html">Required Attire </a>
                 <a href="T_Body.html">Organisation  </a>
                 <a href="T_Philosophy.html">Philosophy </a>
                 <a href="T_Influences.html">Influences </a>
@@ -62,7 +69,7 @@
                 <a href="C_Register.html">Register Form </a>
                 <a href="C_Activities.html">Activities </a>
                 <a href="C_Shopping.html">Shopping </a>
-                <a href="C_Gallary.html">Gallary </a>
+                <a href="C_Gallery.html">Gallery </a>
             </div>
         </div>
         <div class="subnav">
@@ -72,20 +79,75 @@
             <div class="subnav-content">
                 <a href="A_PP.html">Who are we? </a>
                 <a href="A_Contact.html">Contact Us </a>
-                <a href="A_Survey.html">Survey </a>
+                <a href="A_Feedback.html">Feedback</a>
+                <a href="A_Enquiry.html">Enquiry</a>
                 <a href="A_login.html">Privilege Mode</a>
             </div>
         </div>
     </div>
+    <div class="glass">
+        <h1 class=" center1 underline">
+            Contact Us !
+        </h1>
+        <p>
+            For futher infomation, please do not hesitate to contact us by using below infomation.
+        </p>
+    </div>
+    <br />
+    <div class="contact_row">
+        <div class="contact_column glass">
+            <h2>Asia Pacific University of Technology & Innovation</h2>
+            <p> Jalan Teknologi 5, Taman Teknologi Malaysia, 57000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
+            <hr />
+            <p> <b>Traning Point: </b>Ground Floor, Beside Auditorium 5 </p>
+            <p>
+                <b>Contact Number:</b> +60 12 333 6666
+            </p>
+            <p>
+                <b>Email : </b> aputaekwondofamily@gmail.com
+            </p>
+            <p class="break_word">
+                <b>Facebook : </b>
+                <a href="https://www.facebook.com/APUTaekwondoClub/">https://www.facebook.com/APUTaekwondoClub/</a>
+            </p>
+            <a href="A_Feedback.html">
+                <button class="Contact_button">
+                    Submit Feedback 
+                </button>
+            </a>
+            <a href="A_Enquiry.html">
+                <button class="Contact_button">
+                        Submit Enquiry 
+                </button>
+            </a>
+
+        </div>
+        <div class="contact_column glass">
+            <h2> Where are we?</h2>
+            <div id="map">
+
+            </div>
+
+            <script src="js/f_init.js">
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4ynZXNBtkssLgCnHqiduKpVtzUOJd7tw&callback=initMap" async defer></script>
+        </div>
+    </div>
+
 
     <footer>
         <p class="footer_title">STAY IN TOUCH </p>
-        <i class="fa fa-facebook-official " style="font-size:50px;"></i>
+        <a href="https://www.facebook.com/APUTaekwondoClub/">
+            <i class="fa fa-facebook-official " style="font-size:50px;"></i>
+        </a>
         <img class="gapping no_margin no_border" src="Multimedia/button/gap.png">
-        <i class="fa fa-instagram" style="font-size:50px;"></i>
+        <a href="https://www.facebook.com/APUTaekwondoClub/">
+            <i class="fa fa-instagram" style="font-size:50px;"></i>
+        </a>
         <img class="gapping no_margin no_border" src="Multimedia/button/gap.png">
-        <i class="fa fa-twitter-square" style="font-size:50px;">
-        </i>
+        <a href="https://www.facebook.com/APUTaekwondoClub/">
+            <i class="fa fa-twitter-square" style="font-size:50px;"></i>
+        </a>
         <p class="copyright">All Right Reserved &copy; 2019 </p>
     </footer>
 </body>
