@@ -3,18 +3,15 @@
 html {
     width: 95%;
     margin: auto;
-    font-size: 22px;
 }
 
 body {
-    background: url(http://sfwallpaper.com/images/karate-wallpapers-6.jpg);
+    background: url("../Multimedia/img/background_picture.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /*background: rgb(58, 45, 45) ; */
     background-size: cover;
     width: 100%;
     font-family: 'Montserrat', sans-serif !important;
-    cursor: url(../Multimedia/cursor.png);
 }
 
 a {
