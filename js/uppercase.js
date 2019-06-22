@@ -6,6 +6,6 @@ function uppercase() {
 }
 
 function uppercaseTP() {
-    var x = document.getElementsByName("TPnumber");
+    var x = document.getElementById("TPnumber");
     x.value = x.value.toUpperCase();
 }
