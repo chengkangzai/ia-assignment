@@ -788,9 +788,22 @@ p {
 }
 
 
-/* Why join us ? */
+/* New & Media */
 
-.Join_column {
+.News_button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 40%;
+    margin: 0 30% 0 30%;
+}
+
+.News_column {
     float: left;
     width: 33%;
     padding: 5px;
@@ -798,13 +811,13 @@ p {
     border: 1px black solid;
 }
 
-.Join_row:after {
+.News_row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.Join_img {
+.News_img {
     width: 100%;
     border-radius: 3%;
 }
@@ -819,15 +832,9 @@ p {
     display: none;
 }
 
-.Join_button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 40%;
-    margin: 0 30% 0 30%;
+
+/* Why join us ? */
+
+.Join_column {
+    width:
 }
