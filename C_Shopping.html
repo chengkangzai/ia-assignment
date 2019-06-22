@@ -67,7 +67,8 @@
             </button>
             <div class="subnav-content">
                 <a href="C_Join.html">Why join us? </a>
-                <a href="C_News.html">News & Media</a> <a href="C_Register.html">Register Form </a>
+                <a href="C_News.html">News & Media</a>
+                <a href="C_Register.html">Register Form </a>
                 <a href="C_Activities.html">Activities </a>
                 <a href="C_Shopping.html">Shopping </a>
                 <a href="C_Gallery.html">Gallery </a>
@@ -190,7 +191,7 @@
                                 <div class="row">
                                     <div class="col-50">
                                         <label for="state">State</label>
-                                        <input type="text" id="state" name="state" placeholder="KL" required>
+                                        <input type="text" id="state" name="state" placeholder="KL" required onblur="uppercase()">
                                     </div>
                                     <div class="col-50">
                                         <label for="zip">Zip</label>
@@ -242,6 +243,7 @@
     </div>
 
     <script src="js/store.js" async></script>
+    <script src="js/uppercase.js"></script>
 
     <footer>
         <p class="footer_title">STAY IN TOUCH </p>

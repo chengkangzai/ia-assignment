@@ -68,7 +68,8 @@
             </button>
             <div class="subnav-content">
                 <a href="C_Join.html">Why join us? </a>
-                <a href="C_News.html">News & Media</a> <a href="C_Register.html">Register Form </a>
+                <a href="C_News.html">News & Media</a>
+                <a href="C_Register.html">Register Form </a>
                 <a href="C_Activities.html">Activities </a>
                 <a href="C_Shopping.html">Shopping </a>
                 <a href="C_Gallery.html">Gallery </a>
@@ -109,6 +110,9 @@
             <label for="lname">Last Name</label>
             <input class="text-input" type="text" name="lastname" placeholder="Your last name.." required>
 
+            <label for="TPnumber">TP number</label>
+            <input class="text-input" type="text" name="TPnumber" placeholder="Your TP number.." onblur="uppercaseTP()">
+
             <label for="email">Email</label>
             <input class="text-input" type="email" name="lastname" placeholder="Your Email.." required>
 
@@ -124,6 +128,8 @@
         function enquiry() {
             alert("Your Enquiry have been submited. \nWe will contact you in 3 working day! ")
         }
+    </script>
+    <script src="js/uppercase.js">
     </script>
     <footer>
         <p class="footer_title">STAY IN TOUCH </p>

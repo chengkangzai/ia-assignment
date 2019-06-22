@@ -65,7 +65,8 @@
             </button>
             <div class="subnav-content">
                 <a href="C_Join.html">Why join us? </a>
-                <a href="C_News.html">News & Media</a> <a href="C_Register.html">Register Form </a>
+                <a href="C_News.html">News & Media</a>
+                <a href="C_Register.html">Register Form </a>
                 <a href="C_Activities.html">Activities </a>
                 <a href="C_Shopping.html">Shopping </a>
                 <a href="C_Gallery.html">Gallery </a>
@@ -106,6 +107,9 @@
             <label for="lname">Last Name</label>
             <input id="lname" class="text-input" type="text" name="lastname" placeholder="Your last name.." required>
 
+            <label for="TPnumber">TP number</label>
+            <input id="TPnumber" class="text-input" type="text" name="TPnumber" placeholder="Your TP number.." onblur="uppercaseTP()">
+
             <label for="category">Category</label>
             <select class="F_select" name="category">
                     <option value="Website">Website</option>
@@ -126,6 +130,8 @@
             alert("Your Feedback have been submitted.")
         }
     </script>
+        <script src="js/uppercase.js">
+        </script>
 
     <footer>
         <p class="footer_title">STAY IN TOUCH </p>
