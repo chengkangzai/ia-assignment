@@ -14,7 +14,7 @@ body {
 }
 .card {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
@@ -42,7 +42,7 @@ body {
 
 .card .back {
     position: absolute;
-    top: 0;
+    top: 25%;
     left: 0;
     height: 100%;
     width: 100%;
@@ -118,7 +118,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background: #000;
+    background: rgba(255,255,255,0);
     backface-visibility: hidden;
     transform: rotateX(0deg);
     transition: 0.6s;
@@ -178,7 +178,7 @@ body {
 }
 
 .social-icons a:hover .fa {
-    background: #e91863
+    background: #aaaaaa
 }
 
 .bg {
@@ -210,7 +210,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background: #000;
+    background: rgba(255,255,255,0);
     backface-visibility: hidden;
     transform: rotateX(0deg);
     transition: 0.6s;
@@ -262,4 +262,18 @@ body {
 .Education-card-1 .back .details p {
     color: whitesmoke;
     font-size: 16px;
+}
+.gobackbtn{
+    width: 30%;
+    background-color: black;
+    border: none;
+    display: block;
+    color: white;
+    margin:0 35% 0 35%;
+    padding: 2%;
+}
+.gobackbtn:hover{
+    background: whitesmoke;
+    color: black;
+    border: solid white 2px
 }
