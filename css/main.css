@@ -808,3 +808,26 @@ p {
     width: 100%;
     border-radius: 3%;
 }
+
+.collapse {
+    display: none;
+}
+
+#more,
+#more1,
+#more2 {
+    display: none;
+}
+
+.Join_button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 40%;
+    margin: 0 30% 0 30%;
+}
