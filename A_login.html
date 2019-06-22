@@ -33,8 +33,8 @@
     </div>
     <!--Preloader Powered by javascipt -->
     <script src="js/pre_load.js"></script>
-    <!--Top nagivation bar (actually is banner)
-            Also works as a hyperlink to home
+    <!-- #region "Nav bar" -->
+    <!--Top nagivation bar (actually is banner)            Also works as a hyperlink to home
         -->
     <div id="top_navbar">
         <a href="index.html">
@@ -84,6 +84,8 @@
             </div>
         </div>
     </div>
+    <!-- endregion -->
+
 
     <!--ref: https://www.youtube.com/watch?v=mJa_3IiKxFk -->
     <div class="Login_form glass">
@@ -100,7 +102,7 @@
                 <input type="checkbox" onclick="showpassword()">Show Password
             </p>
 
-            <input class="login_input font_120" type="button" value=" Login " onclick="check(this.form)">
+            <input class="login_input font_120" type="submit" value=" Login " onclick="check(this.form)">
         </form>
     </div>
     <script src="js/showpassword.js">

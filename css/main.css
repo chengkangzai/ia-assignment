@@ -836,5 +836,22 @@ p {
 /* Why join us ? */
 
 .Join_column {
-    width:
+    float: left;
+    width: 70%;
+    padding: 10px;
+}
+
+.Join_column1 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+
+
+/* Clear floats after the columns */
+
+.Join_row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
