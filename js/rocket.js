@@ -10,6 +10,8 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
+    var rocketsound = document.getElementById('rocketsound');
+    rocketsound.play();
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
