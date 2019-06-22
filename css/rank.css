@@ -1,0 +1,56 @@
+        /* Exclusive for Rank and Belt */
+        /* Linear gradient */
+        
+        .rank_white_yellow:hover {
+            background-image: linear-gradient(-90deg, whitesmoke, yellow);
+            color: black;
+        }
+        
+        .rank_yellow_green:hover {
+            background-image: linear-gradient(-90deg, yellow, green);
+            color: white;
+        }
+        
+        .rank_green_blue:hover {
+            background-image: linear-gradient(-90deg, green, blue);
+            color: white;
+        }
+        
+        .rank_blue_red:hover {
+            background-image: linear-gradient(-90deg, blue, red);
+            color: white;
+        }
+        
+        .rank_red_black:hover {
+            background-image: linear-gradient(-90deg, red, black);
+            color: white;
+        }
+        /* Color */
+        
+        .rank_white:hover {
+            background: radial-gradient(white, whitesmoke, Gainsboro);
+        }
+        
+        .rank_yellow:hover {
+            background: radial-gradient(yellow, gold, GoldenRod);
+        }
+        
+        .rank_green:hover {
+            background: linear-gradient(-90deg, #00b300, #33ff33);
+            color: white;
+        }
+        
+        .rank_blue:hover {
+            background: linear-gradient(-90deg, #809fff, #0033cc);
+            color: white;
+        }
+        
+        .rank_red:hover {
+            background: linear-gradient(-90deg, #ff8080, #cc0000);
+            color: white;
+        }
+        
+        .rank_black:hover {
+            background: linear-gradient(-90deg, black, #A9A9A9);
+            color: white;
+        }

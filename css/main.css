@@ -3,18 +3,15 @@
 html {
     width: 95%;
     margin: auto;
-    font-size: 22px;
 }
 
 body {
-    background: url(../Multimedia/img/background_picture.jpg);
+    background: url("../Multimedia/img/background_picture.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /*background: rgb(58, 45, 45) ; */
     background-size: cover;
     width: 100%;
     font-family: 'Montserrat', sans-serif !important;
-    cursor: url(../Multimedia/cursor.png);
 }
 
 a {
@@ -490,51 +487,11 @@ p {
 
 /*Activities */
 
-
-/*calender */
-
-.calender {
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    text-align: center；
-}
-
-.calender_td {
-    border: 1px solid black;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.7);
-    width: 10%;
-}
-
-.calender_td:hover {
-    border: 1px solid black;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.9)
-}
-
-.active {
-    border: 1px solid black;
-    text-align: center;
-    opacity: 1;
-    transition: 0.3s;
-    background-color: rgba(67, 144, 216, 0.7);
-}
-
-.legend {
-    margin-top: 3%;
-    text-align: center;
-    width: 70%;
-    margin-left: 15%;
-}
-
-.deactive {
-    border: 1px solid black;
-    text-align: center;
-    opacity: 1;
-    transition: 0.3s;
-    color: whitel;
-    background-color: rgba(14, 13, 13, 0.521);
+.google_calender {
+    border: white solid 5px;
+    width: 80%;
+    margin: 0px 9.5% 0px 9.5%;
+    height: 800px;
 }
 
 
